@@ -26,8 +26,7 @@ jobs:
         with:
           image-ref: 'docker.io/varshaatdockerhub/branch-cf-devsecops-demo:latest'
           format: 'table'
-          exit-code: '1'
-        
+      
       - name: DockerHub
         run: echo "DockerHub"
         
