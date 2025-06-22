@@ -34,6 +34,3 @@ jobs:
         uses: zaproxy/action-baseline@v0.14.0
         with:
           target: 'https://ginandjuice.shop/'
-
-     
-     
