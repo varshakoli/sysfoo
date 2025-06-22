@@ -19,7 +19,7 @@ jobs:
         run: echo "SAST"
         
       - name: Docker Image
-        run: echo "Docker Image"
+        run: docker build -t varshaatdockerhub/branch-cf-devsecops-demo
         
       - name: DockerHub
         run: echo "DockerHub"
