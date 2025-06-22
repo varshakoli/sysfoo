@@ -30,7 +30,7 @@ jobs:
       - name: DockerHub
         run: echo "DockerHub"
         
-      - name: DAST - ZAP
-        uses: zaproxy/action-baseline@v0.14.0
-        with:
-          target: 'https://ginandjuice.shop/'
+      # - name: DAST - ZAP
+      #   uses: zaproxy/action-baseline@v0.14.0
+      #   with:
+      #     target: 'https://ginandjuice.shop/'
