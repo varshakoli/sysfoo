@@ -20,6 +20,13 @@ jobs:
         
       - name: Docker Image
         run: docker build -t varshaatdockerhub/branch-cf-devsecops-demo
+
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@0.28.0
+        with:
+          image-ref: 'docker.io/varshaatdockerhub/branch-cf-devsecops-demo:latest'
+          format: 'table'
+          exit-code: '1'
         
       - name: DockerHub
         run: echo "DockerHub"
