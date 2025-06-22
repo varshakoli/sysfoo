@@ -19,7 +19,7 @@ jobs:
         run: echo "SAST"
         
       - name: Docker Image
-        run: docker build -t varshaatdockerhub/branch-cf-devsecops-demo
+        run: docker build -t varshaatdockerhub/branch-cf-devsecops-demo .
 
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@0.28.0
